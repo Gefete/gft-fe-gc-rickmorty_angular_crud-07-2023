@@ -7,17 +7,18 @@ import { AboutComponent } from './home/about/about.component';
 import { CharactersComponent } from './home/characters/characters.component';
 import { DetalleComponent } from './home/characters/detalle/detalle.component';
 import { BienvenidaComponent } from './home/bienvenida/bienvenida.component';
+import { FormCreateCharacterComponent } from './home/form-create-character/form-create-character.component';
 
 
 const routes: Routes = [
   {path:"", redirectTo: '/home', pathMatch: 'full'},
   {path: 'register', component: RegisterComponent },
   {path: 'login', component: LoginComponent },
-  {path: 'home',  component: HomeComponent}, 
-  {path: '', component: BienvenidaComponent},
+  {path: 'home', component: BienvenidaComponent},
   {path: 'about', component: AboutComponent}, 
   {path: 'characters', component: CharactersComponent},
-  {path: 'detalles/:id', component:DetalleComponent}
+  {path: 'detalles/:id', component:DetalleComponent},
+  {path: 'addcharacter', component:FormCreateCharacterComponent}
 ];
 
 @NgModule({

@@ -11,6 +11,9 @@ import { AboutComponent } from './home/about/about.component';
 import { DetalleComponent } from './home/characters/detalle/detalle.component';
 import { BienvenidaComponent } from './home/bienvenida/bienvenida.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './util/navbar/navbar.component';
+import { FormCreateCharacterComponent } from './home/form-create-character/form-create-character.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +24,15 @@ import { HttpClientModule } from '@angular/common/http';
     CharactersComponent,
     AboutComponent,
     DetalleComponent,
-    BienvenidaComponent
+    BienvenidaComponent,
+    NavbarComponent,
+    FormCreateCharacterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -29,9 +29,9 @@ export class CharactersComponent implements OnInit  {
   ngOnInit(){
     if (this.characters==undefined) {
       // Llama al metodo que genera aleatorios
-      this.rickservice.setRandomized();
+      /* this.rickservice.setRandomized(); */
       // Llama al metodo para recibir los datos de la API
-      this.rickservice.retornar()
+      this.rickservice.getAll()
       .subscribe(result => {
         // imprime por consola datos recibidos
         console.warn(result);

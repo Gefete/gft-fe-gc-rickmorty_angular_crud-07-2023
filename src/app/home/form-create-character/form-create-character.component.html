@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+<div class="container ">
+    <h1>Registrarse</h1>
+    <!-- <form> -->
+        <div class="form-group mt-3">
+            <label for="id">identificador:</label>
+            <input type="text" class="form-control" id="id" placeholder="Ingresa id personaje" [(ngModel)]="id">
+        </div>
+        <div class="form-group mt-3">
+            <label for="name">Nombre:</label>
+            <input type="text" class="form-control" id="name" placeholder="Ingresa nombre personaje" [(ngModel)]="name">
+        </div>
+        <div class="form-group mt-3">
+            
+            <label for="status">Estado:</label>
+            <select class="form-select" id="frutas" [(ngModel)]="status">
+                <option selected value="unknown">Desconocido</option>
+                <option value="dead">Muerto</option>
+                <option value="alive">Vivo</option>
+            </select>
+            <!-- <input type="text" class="form-control" id="status" placeholder="Ingresa el estado del personaje" [(ngModel)]="status"> -->
+        </div>
+        <div class="form-group mt-3">
+            <label for="species">Especie:</label>
+            <input type="text" class="form-control" id="species" placeholder="Ingresa especie del personaje" [(ngModel)]="species">
+        </div>
+        <div class="form-group mt-3">
+            <label for="gender">Genero:</label>
+            <input type="text" class="form-control" id="gender" placeholder="Ingresa el genero del personaje" [(ngModel)]="gender">
+        </div>
+        <div class="form-group mt-3">
+            <label for="origin">Origen:</label>
+            <input type="text" class="form-control" id="origin" placeholder="Ingresa el origen del personaje" [(ngModel)]="origin">
+        </div>
+        <div class="form-group mt-3">
+            <label for="image">Imagen:</label>
+            <input type="text" class="form-control" id="image" placeholder="Ingresa la URL de la imagen" [(ngModel)]="image">
+        </div>
+        <button type="submit" class="btn btn-primary mt-4" (click)="createNewChar()">Añadir</button>
+    <!-- </form> -->
+</div>

@@ -26,7 +26,7 @@ export class DetalleComponent implements OnInit{
       Llamamos un metodo del servicio, el cual devuelve solo 1 objeto 
       se le pasa ID como argumento para agregarlo a la URL GET
       */
-      this.rickservice.getItem(this.id!)
+      this.rickservice.get(this.id!)
         .subscribe(result => {
           console.warn(result);
           this.item = result;

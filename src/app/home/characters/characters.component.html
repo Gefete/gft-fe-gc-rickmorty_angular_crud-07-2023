@@ -1,4 +1,5 @@
 
+<app-navbar></app-navbar>
 <div class="d-flex justify-content-center w-100 h-100 p-5 row">
     <div class="col-sm-3 col-md-2 col-lg-2 m-1 mx-3" *ngFor="let item of characters">
         <div class="d-flex  m-2 card text-center" >
@@ -6,7 +7,7 @@
             <img  src="{{item.image}}" alt="">
             <p class="m-0 mt-1">{{item.name}}</p>
             <!-- Con el siguiente boton nos llevara a la ruta detalles incluido la ID del item como argumento por URL -->
-            <a href="./home/characters/detalles/{{item.id}}"><button class="btn btn-warning m-3" (click)=" getItemSelect(item)">See More</button></a>
+            <a [routerLink]="['/detalles', item.id]"><button class="btn btn-warning m-3" (click)=" getItemSelect(item)">See More</button></a><!--  href="./home/characters/detalles/{{item.id}}" -->
         </div>
     </div>
 </div>
