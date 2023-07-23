@@ -7,7 +7,8 @@
             <img  src="{{item.image}}" alt="">
             <p class="m-0 mt-1">{{item.name}}</p>
             <!-- Con el siguiente boton nos llevara a la ruta detalles incluido la ID del item como argumento por URL -->
-            <a [routerLink]="['/detalles', item.id]"><button class="btn btn-warning m-3" (click)=" getItemSelect(item)">See More</button></a><!--  href="./home/characters/detalles/{{item.id}}" -->
+            <a [routerLink]="['/detalles', item.id]"><button class="btn btn-warning m-3" (click)=" getItemSelect(item)">Detalle</button></a>
+            <button class="btn btn-danger mt-4" (click)=" deleteItem(item)">Borrar</button>
         </div>
     </div>
 </div>

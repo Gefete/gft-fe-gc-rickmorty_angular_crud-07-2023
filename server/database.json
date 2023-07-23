@@ -46,22 +46,13 @@
       "image": "https://rickandmortyapi.com/api/character/avatar/5.jpeg"
     },
     {
-      "id": "519",
-      "name": "Wasp Summer",
+      "id": "56",
+      "name": "gret",
       "status": "alive",
-      "species": "Animal",
-      "gender": "Female",
-      "origin": "Earth (Wasp Dimension)",
-      "image": "https://rickandmortyapi.com/api/character/avatar/519.jpeg"
-    },
-    {
-      "id": "397",
-      "name": "Fido",
-      "status": "alive",
-      "species": "Animal",
-      "gender": "Male",
-      "origin": "Snuffles' Dream",
-      "image": "https://rickandmortyapi.com/api/character/avatar/397.jpeg"
+      "species": "tertre",
+      "gender": "terte",
+      "origin": "erte",
+      "image": "retert"
     }
   ]
 }

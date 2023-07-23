@@ -23,4 +23,9 @@ export class RickmortyService {
   create(data:Character):Observable<any>{
     return this.http.post(baseUrl,data);
   }
+
+  delete(id:Character):Observable<any>{
+    return this.http.delete(`${baseUrl}/${id}`);
+  }
 }
+
